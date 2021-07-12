@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Black Music | Nova Música</title>
+</head>
+<body>
+    
+    <section id="newmusic">
+        <a href="#">
+        <img id='home' src="{{ url_for('static', filename='images/icon.png')}}">
+        </a>
+
+        <div id="card"> 
+            <h4>Nova Música</h4>
+
+
+            <form action="/newmusic" method="POST">
+                <div class="label-float">
+                    <input type="text" name="name" id="name" required>
+                    <label for="nome">Nome</label>
+                </div>
+                <div class="label-float">
+                    <input type="text" name="artist" id="artist" required>
+                    <label for="">Artista</label>
+                </div>
+                <div class="label-float">
+                    <input type="text" name="link" id="link" required>
+                    <label for="link">Link</label>
+                </div>
+            
+                <div class="justify-center">
+                    <button type="submit">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+
+        <a href="#">
+        <img id="gif" src="{{ url_for('static', filename='images/music.gif')}}">
+        </a>
+    </section>
+
+    <footer>
+        <div id="left"> Fábio Araujo - © Copyright - 2021</div>
+        <div id="right">
+            <ul>
+                <li>
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+            </ul>
+            
+            
+            
+        </div>
+    </footer>
+</body>
+</html>

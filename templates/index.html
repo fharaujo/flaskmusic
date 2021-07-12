@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+
+    <title>Music Flask</title>
+</head>
+<body>
+    <nav>
+        <a href="/">
+            <img src="{{ url_for('static', filename='images/icon.png') }}" alt="">
+        </a>
+        <ul>
+            <li>
+                <a href="#playlist">Ouvir <i class="fas fa-headphones-alt"></i></a>
+            </li>
+            <li>
+                <a href="/newmusic">Inserir Música <i class="fas fa-plus-circle"></i></a>
+            </li>
+        </ul>
+    </nav>
+    <header id="banner">
+        <div>
+            <h1>
+                Programando e Ouvindo </i>
+            </h1>
+            <h2>BLACK <i class="fas fa-play"></i> MUSIC </h2> 
+            <h3>CRIE SUA PLAYLIST </h3>
+            
+        </div>
+
+        <img src="{{ url_for('static', filename='images/force_music.jpg') }}" alt="banner">
+    </header>
+<hr/>
+    <section id="list-music">
+        <h4>Playlist</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>#ID</th>
+                    <th>Nome</th>
+                    <th>Artistas</th>
+                    <th>Player</th>
+                    <th>Ações</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                {% for music in musics %}
+                <tr>
+                    <td>{{music.id}}</td>
+                    <td>{{music.name}}</td>
+                    <td>{{music.artist}}</td>
+                    <td>
+                        <audio controls src="{{music.link}}"></audio>
+                    </td>
+                    <td>
+                        <a href="/editmusic/{{music.id}}">Editar</a>
+                        <a href="/deletemusic/{{music.id}}">Apagar</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </section>
+    <footer>
+        <div id="left">Fábio Araujo - © Copyright - 2021</div>
+        <div id="right">
+            <ul>
+                <li>
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+            </ul>
+            
+            
+            
+        </div>
+    </footer>
+</body>
+</html>
