@@ -64,10 +64,11 @@ def deletemusic(id):
     music = Music.query.get(id)
     db.session.delete(music)
     db.session.commit()
+    return redirect('/#playlist')
         
 
 
 # teste de chamada para rodar a função main app
 if __name__ == '__main__':
     db.create_all()
-    app.run(debug=False) # debbug para desenvolvimento
+    app.run(debug=True) # debbug para desenvolvimento
