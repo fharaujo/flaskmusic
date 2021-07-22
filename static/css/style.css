@@ -334,5 +334,230 @@ section#newmusic h4{
     text-shadow: 1px 1px 2px #FF8303;
     margin-bottom: 2rem;
 }
+
+
+/* começo media query */
+
+
+@media(min-width:500px) and (max-width:720px){
+
+    nav{
+        font-size: 15px;
+    }
+    nav a img{
+        width: 35px;
+    }
+
+    html, body{
+        font-size:50%;
+    }
+    header#banner{
+        min-height: 25rem;
+        padding: 72px;
+    }
+
+    header#banner img{
+        width: 90%;
+        padding-left: 10px;
+    }
+
+    header#banner div h1, h2{
+        font-size: 3rem;
+        
+    }
+    header#banner div h3{
+        font-size: 1.5rem;
+        margin-top: 15px;
+        
+    }
+
+    header#banner div i{
+        display:none;
+    }
+
+
+    section#list-music h4{
+        font-size: 3rem;
+    }
+
+
+    section#list-music table, tr, td{
+        font-size: 6.5pt;
+        width: 100%;
+    }
+
+    section#list-music table td audio{
+        width: 300px;
+    }
+   
+
+}
+
+@media(max-width:425px){
+
+    nav{
+        font-size: 15px;
+    }
+    nav a img{
+        width: 35px;
+    }
+
+    html, body{
+        font-size:50%;
+    }
+    header#banner{
+        min-height: 25rem;
+        padding: 72px;
+    }
+
+    header#banner img{
+        width: 90%;
+        padding-left: 10px;
+    }
+
+    header#banner div h1, h2{
+        font-size: 3rem;
+        
+    }
+    header#banner div h3{
+        font-size: 1.5rem;
+        margin-top: 15px;
+        
+    }
+
+    header#banner div i{
+        display:none;
+    }
+
+
+    section#list-music h4{
+        font-size: 3rem;
+    }
+
+
+    section#list-music table, tr, td{
+        font-size: 6.5pt;
+        width: 100%;
+    }
+
+    section#list-music table td audio{
+        width: 200px;
+    }
+   
+
+}
+
+@media(max-width:375px){
+
+    nav{
+        font-size: 15px;
+    }
+    nav a img{
+        width: 35px;
+    }
+
+    html, body{
+        font-size:50%;
+    }
+    header#banner{
+        min-height: 25rem;
+        padding: 72px;
+    }
+
+    header#banner img{
+        width: 90%;
+        padding-left: 10px;
+    }
+
+    header#banner div h1, h2{
+        font-size: 3rem;
+        
+    }
+    header#banner div h3{
+        font-size: 1.5rem;
+        margin-top: 15px;
+        
+    }
+
+    header#banner div i{
+        display:none;
+    }
+
+
+    section#list-music h4{
+        font-size: 2rem;
+      
+    }
+
+
+    section#list-music table, tr, td{
+        font-size: 6.4pt;
+        width: 100%;
+    }
+
+    section#list-music table td audio{
+        width: 135px;
+    }
+   
+
+}
+
+
+@media(max-width:320px){
+
+    nav{
+        font-size: 15px;
+    }
+    nav a img{
+        width: 35px;
+    }
+
+    html, body{
+        font-size:50%;
+    }
+    header#banner{
+        min-height: 25rem;
+        padding: 52px;
+    }
+
+    header#banner img{
+        width: 90%;
+        
+    }
+
+    header#banner div h1, h2{
+        font-size: 2rem;
+        
+    }
+    header#banner div h3{
+        font-size: 1rem;
+        margin-top: 15px;
+        
+    }
+
+    header#banner div i{
+        display:none;
+    }
+
+    
+    section#list-music h4{
+        font-size: 2rem;
+      
+    }
+
+
+    section#list-music table, tr, td{
+        font-size: 5.4pt;
+        width: 90%;
+    }
+
+    section#list-music table td audio{
+        width: 100px;
+    }
+   
+
+}
+
+
 /*  final Página newmusic Styles
 ================================================== */
